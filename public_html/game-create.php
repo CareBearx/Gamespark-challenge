@@ -45,7 +45,7 @@
                 <select id="platform" name="platform" required>
                     <option value="">Kies een platform</option>
                     <option value="PC">PC</option>
-                    <option value="PlayStation">PlayStation</option>
+                    <option value="Playstation">PlayStation</option>
                     <option value="Xbox">Xbox</option>
                     <option value="Switch">Nintendo Switch</option>
                 </select>

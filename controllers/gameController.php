@@ -60,7 +60,7 @@ if ($action == 'create') {
 
     $recommended = trim($_POST['recommended_by'] ?? '');
 
-    $rating = $_POST['rating'];
+    $rating = $_POST['rating'] ?? '';
 
 
 // Valideren 
