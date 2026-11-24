@@ -18,7 +18,23 @@
 
     <a href="game-create.php">+ Game toevoegen</a>
 
-        <script src="../assets/js/script.js"></script>
+    <?php
+
+  if(isset($_GET['toegevoegd'])) {
+        echo '<h2 class="confirmation">Game toegevoegd</h2>';
+    }
+
+?>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="../assets/js/script.js"></script>
 
 </body>
 </html>
