@@ -1,0 +1,20 @@
+:root {
+    --primair: #191627;
+
+    --secondair: #3b2f4d;
+
+    --tertiare: #ebdff5;
+
+    --accent: #985dff;
+
+    --text: #FFFFFF;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cantarell", sans-serif;
+}
