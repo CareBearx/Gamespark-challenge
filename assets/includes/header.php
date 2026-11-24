@@ -7,13 +7,13 @@ $page = basename($_SERVER['PHP_SELF']);
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a class="nav-link <?php if($page === 'index.php') {echo 'active';} ?>" href="index.php">Home</a>
+                    <a class="nav-link <?php if($page === 'index.php') {echo 'active';} ?>" href="/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($page === 'games.php') {echo 'active';} ?>" href="games.php">Games</a>
+                    <a class="nav-link <?php if($page === 'games.php') {echo 'active';} ?>" href="/public_html/games.php">Games</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($page === 'login.php') {echo 'active';} ?>" href="login.php">Inloggen</a>
+                    <a class="nav-link <?php if($page === 'login.php') {echo 'active';} ?>" href="/public_html/login.php">Inloggen</a>
                 </li>
             </ul>
         </nav>

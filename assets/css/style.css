@@ -167,6 +167,7 @@ form {
     border-radius: 8px;
     border-top: 5px solid var(--primair);
 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 form h1 {
@@ -226,6 +227,7 @@ form textarea:focus,
 form select:focus {
     outline: none;
     border-color: var(--accent);
+    box-shadow: 0 0 8px rgba(255,255,255,0.15);
 }
 
 .rating-container {
@@ -281,4 +283,5 @@ form button {
 
 form button:hover {
     transform: translateY(-2px);
+    
 }
