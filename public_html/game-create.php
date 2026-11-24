@@ -10,15 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-     <link rel="icon" href="../assets/img/favicon.png" />
+    <link rel="icon" href="../assets/img/favicon.png" />
 </head>
 
 <body>
     <?php require_once '../assets/includes/header.php'; ?>
+    <div class="breadcrumb">
+        <a href="games.php">Games</a>
+        <span>
+            < </span>
+                <span> Create game </span>
+    </div>
+
+  
 
 
-
-        <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
 </body>
+
 </html>

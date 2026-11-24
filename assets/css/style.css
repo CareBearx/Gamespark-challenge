@@ -18,3 +18,141 @@
     box-sizing: border-box;
     font-family: "Cantarell", sans-serif;
 }
+
+body {
+    background-color: var(--tertiare);
+}
+
+
+header {
+    background-color: var(--primair);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 20px;
+
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--text);
+    text-shadow:
+        0 0 7px #322840,
+        0 0 10px #504069,
+        0 0 21px #6e5a92,
+        0 0 25px #a18acc;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1.5px;
+    background-color: #dfd9e8;
+    box-shadow: 0 0 7px #322840,
+        0 0 10px #504069,
+        0 0 21px #6e5a92,
+        0 0 25px #a18acc;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1.5px;
+    background-color: #dfd9e8;
+    box-shadow: 0 0 7px #322840,
+        0 0 10px #504069,
+        0 0 21px #6e5a92,
+        0 0 25px #a18acc;
+     transform: scaleX(1);
+}
+
+
+img {
+    width: 175px;
+}
+
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+
+    background-image: url(../img/4422145.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--text);
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(ellipse at 20% 100%,
+            rgba(117, 96, 154, 0.45) 0%,
+            transparent 55%),
+        radial-gradient(ellipse at 80% 0%,
+            rgba(68, 55, 91, 0.35) 0%,
+            transparent 50%),
+        linear-gradient(180deg,
+            rgba(15, 10, 25, 0.3) 0%,
+            rgba(15, 10, 25, 0.7) 100%);
+
+    z-index: 1;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+
+    background: linear-gradient(transparent,
+            rgba(15, 10, 25, 0.95));
+
+    z-index: 1;
+}
+
+.hero-section>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.breadcrumb {
+    margin: 15px;
+}
+

@@ -15,7 +15,24 @@
 
 <body>
     <?php require_once '../assets/includes/header.php'; ?>
-    
+    <section class="hero-section">
+        <div class="hero-text">
+        <h1> GAMESPARK </h1>
+        <p>lipsumlipsumlipsumlipsumlipsumlipsumlipsumlipsumlipsumlipsumlipsumlipsumlipsum</p>
+        <div>
+    </section>
+
+    <section class="herolist-section">
+        <div class="wrapper">
+            <ul>
+                <li class="list-style"><i><img src="" alt=""></i> Horror</li>
+                <li class="list-style"><i><img src="" alt=""></i> Horror</li>
+                <li class="list-style"><i><img src="" alt=""></i> Horror</li>
+            </ul>
+
+
+            <div>
+    </section>
 
 
 
