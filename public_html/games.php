@@ -59,7 +59,7 @@ if (count($games) > 0) {
                 <div>
                     <h4><?=$game['release_year']?></h4>
                     <h2><?=$game['name']?></h2>
-                    <p><?= $game['note']?></p>
+                    <p><?=$game['note']?></p>
                 </div>
 
                 <div>
@@ -78,7 +78,7 @@ if (count($games) > 0) {
             <div class='game-box'>
                 <div>
                     <h3><?= $game['status']?></h3>
-                    <h3><?= "Aangeraden door: " . $game['recommended_by']?></h3>
+                    <h3><?php if(!empty($game['recommended_by'])) { echo "Aangeraden door: " . $game['recommended_by']; }?></h3>
                 </div>
 
                 <div>

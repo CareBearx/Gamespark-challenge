@@ -60,7 +60,16 @@ if ($action == 'create') {
 
     $recommended = trim($_POST['recommended_by'] ?? '');
 
-    $rating = $_POST['rating'] ?? '';
+    $rating = $_POST['rating'] ?? 0;
+
+    $allowed_ratings = [
+        0,
+        '1',
+        '2',
+        '3',
+        '4',
+        '5'
+    ];
 
 
 // Valideren 
@@ -68,13 +77,22 @@ if ($action == 'create') {
 
     $errors = [];
 
+    if (!filter_var($image, FILTER_VALIDATE_URL, true)) {
+
+        $errors[] = 'Gebruik een geldige afbeelding URL';
+    }
+
     if (!in_array($platform, $allowed_platform, true)) {
         $errors[] = 'Kies een geldige platform';
     }
 
-    if(!is_numeric($_POST['release_year'])) {
+    if(!is_numeric($_POST['release_year']) || $_POST['release_year'] >= 2030 || $_POST['release_year'] <= 1980) {
         $errors[] = 'Kies een geldig jaartal';
     } 
+
+    if(!in_array($rating, $allowed_ratings, true)) {
+        $errors[] = 'Kies een geldige rating';
+    }
 
     if(!in_array($genre, $allowed_genre, true)) {
         $errors[] = 'Kies een geldige genre';

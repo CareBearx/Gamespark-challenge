@@ -93,10 +93,11 @@
 
 
             <div class="form-group">
-                <label for="recommended_by">Aangeraden door</label>
+                <label for="recommended_by">
+                    Aangeraden door <span class="optional">Optioneel</span>
+                </label>
+
                 <input type="text" id="recommended_by" name="recommended_by">
-
-
 
                 <div class="rating-container">
 
